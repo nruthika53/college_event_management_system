@@ -1,0 +1,192 @@
+/* Main website design */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eaf2ff, #f8fbff);
+    margin: 0;
+    padding: 35px 20px;
+    text-align: center;
+    color: #26364d;
+    min-height: 100vh;
+}
+
+/* Main headings */
+h1 {
+    color: #173b72;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #24518c;
+    margin-bottom: 20px;
+}
+
+/* Navigation links and buttons */
+a {
+    display: inline-block;
+    background: #2463b5;
+    color: white;
+    text-decoration: none;
+    padding: 13px 24px;
+    margin: 10px;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+a:hover {
+    background: #143d78;
+    transform: translateY(-2px);
+}
+
+/* Forms */
+form {
+    background: white;
+    max-width: 520px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(30, 70, 120, 0.12);
+}
+
+/* Labels */
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+    color: #344b68;
+}
+
+/* Input fields and dropdowns */
+input, select, textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 7px 0;
+    border: 1px solid #cbd7e6;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #2463b5;
+    box-shadow: 0 0 5px rgba(36, 99, 181, 0.25);
+}
+
+/* Submit buttons */
+button {
+    background: #16834b;
+    color: white;
+    padding: 13px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 12px;
+}
+
+button:hover {
+    background: #106438;
+}
+
+/* Tables */
+table {
+    width: 95%;
+    max-width: 1100px;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(30, 70, 120, 0.12);
+}
+
+th {
+    background: #245da8;
+    color: white;
+    padding: 15px;
+}
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #e3eaf2;
+}
+
+tr:nth-child(even) {
+    background: #f0f5fc;
+}
+
+tr:hover {
+    background: #e2edff;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 8px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px 5px;
+    }
+
+    form {
+        padding: 18px;
+    }
+}
+/* Home page card layout */
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 850px;
+    margin: 40px auto;
+}
+
+.menu-card {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(30, 70, 120, 0.15);
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(30, 70, 120, 0.22);
+}
+
+.menu-card h3 {
+    color: #245da8;
+    font-size: 20px;
+}
+
+.menu-card p {
+    color: #607086;
+    margin-bottom: 20px;
+}
+
+.menu-card a {
+    margin: 5px;
+}
+
+/* Mobile screen layout */
+
+@media (max-width: 600px) {
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusEvents | College Event Management</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fb;
+            color: #222;
+        }
+
+        header {
+            background: #24245c;
+            color: white;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            font-size: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #24245c, #6464c5);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffbd59;
+            color: #222;
+            padding: 13px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .events {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .events h2 {
+            margin-bottom: 25px;
+        }
+
+        .event-card {
+            display: inline-block;
+            background: white;
+            width: 250px;
+            padding: 25px;
+            margin: 12px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #ddd;
+        }
+
+        .event-card h3 {
+            color: #24245c;
+            margin-bottom: 12px;
+        }
+
+        footer {
+            background: #24245c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>CampusEvents</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#events">Events</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to CampusEvents!</h1>
+
+        <p>
+            Discover exciting college events.
+            Participate, learn and enjoy!
+        </p>
+
+        <a href="/register" class="btn">Register Now</a>
+    </section>
+
+    <section class="events" id="events">
+
+        <h2>Upcoming Events</h2>
+
+        <div class="event-card">
+            <h3>Technical Fest</h3>
+            <p>Explore technology and innovation.</p>
+        </div>
+
+        <div class="event-card">
+            <h3>Cultural Fest</h3>
+            <p>Showcase your talents and creativity.</p>
+        </div>
+
+        <div class="event-card">
+            <h3>Sports Day</h3>
+            <p>Participate in exciting sports activities.</p>
+        </div>
+
+    </section>
+
+    <section class="events" id="about">
+        <h2>About CampusEvents</h2>
+        <p>
+            A platform to manage and participate
+            in college events easily.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 CampusEvents | College Event Management System</p>
+    </footer>
+
+</body>
+</html>

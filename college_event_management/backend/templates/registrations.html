@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registrations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Student Event Registrations</h1>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Registration ID</th>
+            <th>Student Name</th>
+            <th>USN</th>
+            <th>Event Name</th>
+            <th>Event Date</th>
+        </tr>
+
+        {% for registration in registrations %}
+        <tr>
+            <td>{{ registration.registration_id }}</td>
+            <td>{{ registration.student_name }}</td>
+            <td>{{ registration.usn }}</td>
+            <td>{{ registration.event_name }}</td>
+            <td>{{ registration.event_date }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+    <br>
+    <a href="/">Back to Home</a>
+
+</body>
+</html>

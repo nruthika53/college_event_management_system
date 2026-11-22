@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fb;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            background: white;
+            max-width: 450px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #ddd;
+        }
+
+        h2 {
+            text-align: center;
+            color: #24245c;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 11px;
+            margin-top: 7px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            margin-top: 22px;
+            background: #24245c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Event Registration</h2>
+
+    <form action="http://127.0.0.1:5000/register" method="POST">
+
+    <label>Student Name</label>
+    <input type="text" name="student_name"
+           placeholder="Enter your name" required>
+
+    <label>USN</label>
+    <input type="text" name="usn"
+           placeholder="Enter your USN" required>
+
+    <label>Email</label>
+    <input type="email" name="email"
+           placeholder="Enter your email" required>
+
+    <label>Department</label>
+    <select name="department" required>
+        <option value="" disabled selected>Select Department</option>
+        <option value="CSE">CSE</option>
+        <option value="AI & DS">AI & DS</option>
+        <option value="ECE">ECE</option>
+        <option value="ISE">ISE</option>
+    </select>
+
+    <label>Select Event</label>
+    <select name="event" required>
+        <option value="" disabled selected>Choose Event</option>
+        <option value="Technical Fest">Technical Fest</option>
+        <option value="Cultural Fest">Cultural Fest</option>
+        <option value="Sports Day">Sports Day</option>
+    </select>
+
+    <button type="submit">Register Now</button>
+
+</form>
+
+    <a href="index.html">Back to Home</a>
+
+</div>
+
+</body>
+</html>
